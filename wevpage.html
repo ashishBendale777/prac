@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: red;
+            height: 30px;
+        }
+
+        nav {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .about-section {
+            height: 100vh;
+            width: 100vw;
+            background-color: green;
+            display: flex;
+            align-items: center;
+        }
+
+        .about-section p {
+            font-size: 40px;
+            text-align: justify;
+        }
+
+        .about-section h3 {
+            font-size: 50px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .about-container {
+            height: 80%;
+            width: 50%;
+            /* background-color: red; */
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .mission-container {
+            height: 80%;
+            width: 50%;
+            /* background-color: blue; */
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+
+        .contact-container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 80%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 50%;
+        }
+
+        .form-container input {
+            height: 30px;
+            border: 3px solid red;
+            border-radius: 20px;
+            padding-left: 10px;
+        }
+
+        .form-container button {
+            width: 100px;
+            height: 25px;
+            background-color: green;
+            border-radius: 30px;
+            padding: 2px;
+            color: red;
+            align-self: center;
+        }
+
+        .form-container button:hover {
+            background-color: red;
+            color: pink;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 80%;
+        }
+
+        .image-container img {
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            border: 10px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <div class="about-container">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Natus
+                excepturi enim facilis tempora ratione.
+                Voluptates quibusdam maiores sit odit nulla
+                itaque magni magnam, necessitatibus laudantium
+                quam aut accusantium ullam perferendis.</p>
+        </div>
+        <div class="mission-container">
+            <h3>Mission</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Natus
+                excepturi enim facilis tempora ratione.
+                Voluptates quibusdam maiores sit odit nulla
+                itaque magni magnam, necessitatibus laudantium
+                quam aut accusantium ullam perferendis.</p>
+        </div>
+    </section>
+
+    <section class="contact-container">
+        <div class="image-container">
+            <img src="./images/GIRL.jpg" alt="">
+        </div>
+        <div class="form-container">
+            <h1>Contact Us</h1>
+            <form>
+                <input type="text" name="username" placeholder="Enter Name">
+                <input type="email" name="ysermail" placeholder="Enter Email">
+                <input type="tel" name="usermobno" placeholder="Enter Mobile">
+                <input type="password" name="userpassword" placeholder="Enter Password">
+
+                <div>
+                    <label for="m">Male</label>
+                    <input type="radio" id="m" name="gender">
+
+                    <label for="f">Female</label>
+                    <input type="radio" id="f" name="gender">
+                </div>
+                <div>
+                    <select name="courses" id="">
+                        <option>Select Course</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BCA">MCA</option>
+                        <option value="Msc">MSc</option>
+                    </select>
+                </div>
+
+                <button>Suvmit</button>
+            </form>
+        </div>
+
+    </section>
+</body>
+
+</html>
