@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 30px;
+        }
+
+        p {
+            font-size: 40px;
+            text-align: justify;
+        }
+
+        p::first-letter{
+            color: red;
+            font-size: 50px;
+        }
+
+        p::first-line{
+            background-color: green;
+        }
+
+        span::after{
+            content: " from Bsl";
+            font-size: 50px;
+        }
+        span::before{
+            content: " from Bsl";
+            font-size: 50px;
+        }
+
+        p::before{
+            content: "Staart ";
+
+        }
+
+        ul{
+            list-style: none;
+            font-size: xx-large;
+        }
+
+        li:nth-child(3){
+            color: red;
+            font-size: 80px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sequi odit qui, totam accusamus nobis vero
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+        , magnam. Earum voluptate repudiandae nesciunt
+        deleniti asperiores cupiditate, ducimus unde. Repellat architecto labore tenetur
+        illum autem temporibus, sunt numquam provident blanditiis.
+        blanditiis non nam eius! Praesentium perferendis est autem eum aperiam
+        quos placeat excepturi voluptatem laudantium
+        ?
+    </p>
+
+    <p>
+        Hi I Am Ashish
+    </p>
+
+    <span>Ashish</span>
+
+    <ul>
+        <li>Ashish</li>
+        <li>Dhiraj</li>
+        <li>Pawan</li>
+        <li>Sam</li>
+        <li>Amol</li>
+    </ul>
+</body>
+
+</html>
