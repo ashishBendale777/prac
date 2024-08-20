@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-container {
+            height: 80%;
+            width: 80%;
+            /* background-color: red; */
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .card-item {
+            height: 90%;
+            flex-grow: 1;
+            background-color: black;
+            position: relative;
+            overflow-y: hidden;
+        }
+
+        .overlay {
+            width: 100%;
+            height: 100px;
+            background-color: rgba(255, 000, 000, 0.9);
+            position: absolute;
+            bottom: 0;
+            transform: translateY(100px);
+            transition: all 1s;
+
+        }
+
+        .card-item:hover .overlay {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card-item">
+            <h1>CARD 1</h1>
+            <div class="overlay">
+                <h1>Ove 1</h1>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <h1>CARD 2</h1>
+            <div class="overlay">
+                <h1>Ove 2</h1>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <h1>CARD 3</h1>
+            <div class="overlay">
+                <h1>Ove 3</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
