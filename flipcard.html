@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-container {
+            height: 80%;
+            perspective: 1000px;
+            width: 80%;
+            display: flex;
+            gap: 20px;
+        }
+
+        .card-item {
+            height: 90%;
+            flex-grow: 1;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+
+        .card-front,
+        .card-back {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-front {
+            background-color: green;
+        }
+
+        .card-back {
+            background-color: blue;
+            transform: rotateY(180deg);
+        }
+
+        .card-item:hover {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        
+        <div class="card-item">
+            <div class="card-front">
+                <h1>FRONT</h1>
+            </div>
+            <div class="card-back">
+                <h1>BACK</h1>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-front">
+                <h1>FRONT</h1>
+            </div>
+            <div class="card-back">
+                <h1>BACK</h1>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-front">
+                <h1>FRONT</h1>
+            </div>
+            <div class="card-back">
+                <h1>BACK</h1>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
