@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //Jzacascript Objects
+
+        // create an object
+        var studentData = {
+            studentName: "Ashish",
+            studentClass: "FY",
+            studentCourse: "MCA",
+            studentRollNo: 1,
+            studentAddress: {
+                area: "Ganesh Colony",
+                plotNo: 32,
+                city: "Jalgaon",
+                state: "MH",
+                pin: 425001
+            }
+        }
+
+        //get data from Object
+        console.log(studentData.studentClass);
+        console.log(studentData.studentName);
+        console.log(studentData.studentAddress.city);
+
+        console.log(studentData.studentAddress.pin);
+        studentData.studentAddress.pin = 4324
+
+        console.log(studentData.studentAddress.pin);
+        
+        studentData.studentCourse = "BCA"
+    </script>
+</body>
+
+</html>
