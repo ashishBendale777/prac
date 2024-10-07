@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var studemts = [{
+            sRollNo: 1,
+            sName: "Ashish",
+            sCourse: "MCA",
+            sYear: "FY",
+            sPercentage: 54
+        }, {
+            sRollNo: 2,
+            sName: "Sam",
+            sCourse: "MCA",
+            sYear: "SY",
+            sPercentage: 65
+        }, {
+            sRollNo: 3,
+            sName: "Amol",
+            sCourse: "MCA",
+            sYear: "SY",
+            sPercentage: 76
+        }]
+
+        // const studData = studemts.find((stud) => stud.sRollNo == 6)
+        const studData = studemts.find((stud) => stud.sYear == "SY")
+
+        console.log("FIND",studData);
+
+        const syStudList = studemts.filter((stud) => stud.sYear == 'SY')
+        console.log("FILTER",syStudList);
+
+        const result = studemts.some((stud)=> stud.sCourse == "MCA")
+        console.log(result);
+
+        // const resultEvery = studemts.every((stud)=> stud.sCourse == "MCA")
+        const resultEvery = studemts.every((stud)=> stud.sYear == "S")
+        console.log(resultEvery);
+
+    
+    </script>
+</body>
+
+</html>
