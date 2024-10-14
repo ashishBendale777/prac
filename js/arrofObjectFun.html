@@ -34,19 +34,27 @@
         // const studData = studemts.find((stud) => stud.sRollNo == 6)
         const studData = studemts.find((stud) => stud.sYear == "SY")
 
-        console.log("FIND",studData);
+        console.log("FIND", studData);
 
         const syStudList = studemts.filter((stud) => stud.sYear == 'SY')
-        console.log("FILTER",syStudList);
+        console.log("FILTER", syStudList);
 
-        const result = studemts.some((stud)=> stud.sCourse == "MCA")
+        const result = studemts.some((stud) => stud.sCourse == "MCA")
         console.log(result);
 
         // const resultEvery = studemts.every((stud)=> stud.sCourse == "MCA")
-        const resultEvery = studemts.every((stud)=> stud.sYear == "S")
+        const resultEvery = studemts.every((stud) => stud.sYear == "S")
         console.log(resultEvery);
 
-    
+
+        //declaration
+        function studentByYear(year) {
+            var result = studemts.filter((stud) => stud.sYear == year)
+            console.log(result);
+        }
+
+        studentByYear("SY")
+        studentByYear("FY")
     </script>
 </body>
 
