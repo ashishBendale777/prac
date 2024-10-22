@@ -1,0 +1,9 @@
+{
+    "name":"Ashish",
+    "lastName": "Bendale",
+    "email": "ashish@gmail.com",
+    "password": "ashish",
+    "role": "Admin",
+    "isVarified":  true,
+    "isDeactivated": true,
+}
