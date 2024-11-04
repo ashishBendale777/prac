@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //setTimeout and setInterval function
+
+        function shoMwssage() {
+            console.log("Hi..");
+        }
+
+
+        // setTimeout(() => {
+        //     shoMwssage()
+        // }, 3000)
+
+        // setTimeout(shoMwssage,4000)
+
+
+        let id = setInterval(shoMwssage, 1000)
+
+
+        setTimeout(() => {
+            clearInterval(id)
+        }, 5000)
+
+
+    </script>
+</body>
+
+</html>
