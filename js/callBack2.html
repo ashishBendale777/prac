@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //call back function
+
+        // function generateMessage(userName) {
+        //     let message = `Happy Birthday ${userName} have nice day`
+        //     return message
+
+        // }
+
+
+        function generateMessage(userName, nextStep) {
+            let message = `Happy Birthday ${userName} have nice day`
+
+            setTimeout(() => {
+                nextStep(message)
+            }, 1000)
+        }
+
+
+        // function printMessage() {
+        //     let msg = generateMessage("S")
+        //     console.log(msg);
+        // }
+
+        function printMessage(message) {
+            console.log(message);
+        }
+
+
+        //step 1
+        // let mMsg
+
+        // setTimeout(() => {
+        //     mMsg = generateMessage("Ash")
+        // }, 1000)
+
+        // printMessage(mMsg)
+
+        generateMessage("Ash", printMessage)
+
+    </script>
+</body>
+
+</html>
