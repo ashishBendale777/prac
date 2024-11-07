@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //1 better preparation
+
+        function prepareBetter(nextStep) {
+            console.log("Preparing..");
+
+            setTimeout(() => {
+                console.log("Prepared..");
+                nextStep()
+            }, 1000)
+        }
+
+        //2 add flavour
+        function addFlavour(nextStep) {
+            console.log("Adding...");
+            setTimeout(() => {
+                console.log("Flavout Added");
+                nextStep()
+            
+            }, 1000)
+        }
+
+        // 3 choose shape
+        function chooseSHape(nextStep) {
+            console.log("Choosing Shape..");
+            setTimeout(() => {
+                console.log("Shaoe Selected");
+                nextStep()
+            }, 1000)
+        }
+        //4 do baking
+
+        //5 decorate cake
+
+
+        prepareBetter(() => {
+            addFlavour(() => {
+                chooseSHape(() => {
+                    console.log("DONE");
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>
