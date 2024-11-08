@@ -19,7 +19,7 @@
             setTimeout(() => {
                 console.log("Prepared..");
                 nextStep()
-            }, 1000)
+            }, 2000)
         }
 
         //2 add flavour
@@ -28,8 +28,8 @@
             setTimeout(() => {
                 console.log("Flavout Added");
                 nextStep()
-            
-            }, 1000)
+
+            }, 2000)
         }
 
         // 3 choose shape
@@ -38,16 +38,17 @@
             setTimeout(() => {
                 console.log("Shaoe Selected");
                 nextStep()
-            }, 1000)
+            }, 2000)
         }
         //4 do baking
 
         //5 decorate cake
 
 
+
         prepareBetter(() => {
-            addFlavour(() => {
-                chooseSHape(() => {
+            addFlavour(()=>{
+                chooseSHape(()=>{
                     console.log("DONE");
                 })
             })
