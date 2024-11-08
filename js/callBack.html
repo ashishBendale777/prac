@@ -16,19 +16,21 @@
             console.log("Hi..");
         }
 
-
         // setTimeout(() => {
         //     shoMwssage()
         // }, 3000)
 
+        setTimeout(shoMwssage, 2000)
+
+
         // setTimeout(shoMwssage,4000)
 
 
-        let id = setInterval(shoMwssage, 1000)
+        let intervalId = setInterval(shoMwssage, 1000)
 
 
         setTimeout(() => {
-            clearInterval(id)
+            clearInterval(intervalId)
         }, 5000)
 
 
