@@ -11,49 +11,44 @@
 
     <script>
 
-        //1 better preparation
+        function prepareBetter(weight, nextStep) {
+            let cake = {}
+            cake.cakeWeight = weight
 
-        function prepareBetter(nextStep) {
             console.log("Preparing..");
 
             setTimeout(() => {
                 console.log("Prepared..");
-                nextStep()
+                nextStep(cake)
             }, 2000)
         }
 
-        //2 add flavour
-        function addFlavour(nextStep) {
+        function addFlavour(cakedata, flavour, nextStep) {
             console.log("Adding...");
+            cakedata.cakeFlavor = flavour
             setTimeout(() => {
                 console.log("Flavout Added");
-                nextStep()
+                nextStep(cakedata)
 
             }, 2000)
         }
 
-        // 3 choose shape
-        function chooseSHape(nextStep) {
+        function chooseSHape(cakedata, shape, nextStep) {
             console.log("Choosing Shape..");
+            cakedata.cakeShape = shape
             setTimeout(() => {
                 console.log("Shaoe Selected");
-                nextStep()
+                nextStep(cakedata)
             }, 2000)
         }
-        //4 do baking
 
-        //5 decorate cake
-
-
-
-        prepareBetter(() => {
-            addFlavour(() => {
-                chooseSHape(() => {
-                    console.log("DONE")
+        prepareBetter("1kg", (cakedata) => {
+            addFlavour(cakedata, "Choco", (cakedata) => {
+                chooseSHape(cakedata, "Heart", (cakedata) => {
+                    console.log(cakedata);
                 })
             })
         })
-
 
     </script>
 </body>
