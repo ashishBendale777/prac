@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //destructuring of an object and array
+
+        let student = {
+            sname: "Ashish",
+            smob: 12423434,
+            scity: "JALGAON"
+        }
+        console.log(student.sname);
+
+        let { sname, scity } = student
+        console.log(sname)
+        console.log(scity)
+
+        let address = {
+            area: "Prabhat Colony",
+            plotno: "24/4",
+            landmark: "Near Jayant Lathi Hospital"
+        }
+
+        // student.address = address
+        // console.log(student);
+
+        // let { landmark } = student.address
+        // console.log(landmark);
+
+        // //sprad operator
+        let student2 = { ...student, ...address, adharno: 123123131 }
+        console.log(student2);
+        // 
+        // var { landmark } = student2
+        // console.log(landmark);
+
+
+
+        //array
+        let name = ["Ashush", "Sam", "Amol", "Pawan", "Dhiraj"]
+
+        let [a, b, c, ...d] = name
+        console.log(a);
+        console.log(c);
+
+        let friends = [...name, "Amol", "Anuj"]
+        console.log(friends);
+    </script>
+</body>
+
+</html>
